@@ -1,0 +1,54 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="DynamicDataDisplay.InteractiveSDK" EntryPointType="Microsoft.Research.DynamicDataDisplay.InteractiveSDK.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings ShortName="D3 InteractiveSDK" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+      <OutOfBrowserSettings.Blurb>DynamicDataDisplay InteractiveSDK on your desktop; at home, at work or on the go.</OutOfBrowserSettings.Blurb>
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="DynamicDataDisplay InteractiveSDK" />
+      </OutOfBrowserSettings.WindowSettings>
+      <OutOfBrowserSettings.Icons>
+        <Icon Size="128,128">d3s.png</Icon>
+      </OutOfBrowserSettings.Icons>
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+  <Deployment.Parts>
+    <AssemblyPart x:Name="DynamicDataDisplay.InteractiveSDK" Source="DynamicDataDisplay.InteractiveSDK.dll" />
+    <AssemblyPart x:Name="AxisScrollSample" Source="AxisScrollSample.dll" />
+    <AssemblyPart x:Name="BarChartSample" Source="BarChartSample.dll" />
+    <AssemblyPart x:Name="BingMapAreaMarkers" Source="BingMapAreaMarkers.dll" />
+    <AssemblyPart x:Name="BingMapMarkers" Source="BingMapMarkers.dll" />
+    <AssemblyPart x:Name="BubbleChartSample" Source="BubbleChartSample.dll" />
+    <AssemblyPart x:Name="Codexcite.SyntaxHighlighting" Source="Codexcite.SyntaxHighlighting.dll" />
+    <AssemblyPart x:Name="ConcurrentMarkerGraphSample" Source="ConcurrentMarkerGraphSample.dll" />
+    <AssemblyPart x:Name="CustomBubbleChartSample" Source="CustomBubbleChartSample.dll" />
+    <AssemblyPart x:Name="CustomMarkerLegendSample" Source="CustomMarkerLegendSample.dll" />
+    <AssemblyPart x:Name="DynamicDataDisplay.BingMaps.Silverlight" Source="DynamicDataDisplay.BingMaps.Silverlight.dll" />
+    <AssemblyPart x:Name="DynamicHeatmapSample" Source="DynamicHeatmapSample.dll" />
+    <AssemblyPart x:Name="DynamicMarkerGraphSample" Source="DynamicMarkerGraphSample.dll" />
+    <AssemblyPart x:Name="HeatmapPaletteSample" Source="HeatmapPaletteSample.dll" />
+    <AssemblyPart x:Name="HeatmapSample" Source="HeatmapSample.dll" />
+    <AssemblyPart x:Name="LineGraphLegendSample" Source="LineGraphLegendSample.dll" />
+    <AssemblyPart x:Name="ManyMarkersSample" Source="ManyMarkersSample.dll" />
+    <AssemblyPart x:Name="MarkerGraphSample" Source="MarkerGraphSample.dll" />
+    <AssemblyPart x:Name="MarkersWithUIControlSample" Source="MarkersWithUIControlSample.dll" />
+    <AssemblyPart x:Name="MarkerTemplatesSample" Source="MarkerTemplatesSample.dll" />
+    <AssemblyPart x:Name="MatrixDisplaySample" Source="MatrixDisplaySample.dll" />
+    <AssemblyPart x:Name="PlotSample" Source="PlotSample.dll" />
+    <AssemblyPart x:Name="StandaloneHeatmapSample" Source="StandaloneHeatmapSample.dll" />
+    <AssemblyPart x:Name="SyncGraphsSample" Source="SyncGraphsSample.dll" />
+    <AssemblyPart x:Name="System.Reactive" Source="System.Reactive.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Layout.Toolkit" Source="System.Windows.Controls.Layout.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit" Source="System.Windows.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit.Internals" Source="System.Windows.Controls.Toolkit.Internals.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="Tutorial1" Source="Tutorial1.dll" />
+    <AssemblyPart x:Name="Tutorial2" Source="Tutorial2.dll" />
+    <AssemblyPart x:Name="Tutorial3" Source="Tutorial3.dll" />
+    <AssemblyPart x:Name="Tutorial4" Source="Tutorial4.dll" />
+    <AssemblyPart x:Name="TwoScalesSample" Source="TwoScalesSample.dll" />
+    <AssemblyPart x:Name="VerticalIntervalSample" Source="VerticalIntervalSample.dll" />
+    <AssemblyPart x:Name="DynamicDataDisplay.Silverlight" Source="DynamicDataDisplay.Silverlight.dll" />
+    <AssemblyPart x:Name="Microsoft.Maps.MapControl" Source="Microsoft.Maps.MapControl.dll" />
+    <AssemblyPart x:Name="Microsoft.Maps.MapControl.Common" Source="Microsoft.Maps.MapControl.Common.dll" />
+  </Deployment.Parts>
+</Deployment>

@@ -1,0 +1,21 @@
+<!-- Copyright © 2010-2011 Microsoft Corporation, All Rights Reserved.
+ -->
+<UserControl x:Class="StandaloneHeatmapSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d3="clr-namespace:Microsoft.Research.DynamicDataDisplay;assembly=DynamicDataDisplay.Silverlight"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" FontSize="14">Standalone heatmap sample</TextBlock>
+        <d3:HeatmapGraph Name="standaloneHeatmap" Palette="Black,White" Grid.Row="1" Margin="30,30,30,30"/>
+    </Grid>
+</UserControl>
+

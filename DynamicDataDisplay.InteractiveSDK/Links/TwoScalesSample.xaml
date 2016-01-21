@@ -1,0 +1,28 @@
+<!-- Copyright © 2010-2011 Microsoft Corporation, All Rights Reserved.
+ -->
+<UserControl x:Class="TwoScalesSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d3="clr-namespace:Microsoft.Research.DynamicDataDisplay;assembly=DynamicDataDisplay.Silverlight"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <d3:Figure x:Name="figure">
+            <TextBlock d3:Figure.Placement="Top" FontSize="14" Text="Two scales sample" TextAlignment="Center" Margin="5"/>
+            <d3:PlotAxis x:Name="leftAxis" d3:Figure.Placement="Left" AxisOrientation="Left" Foreground="Blue"/>
+            <d3:PlotAxis x:Name="bottomAxis" d3:Figure.Placement="Bottom" AxisOrientation="Bottom"/>
+            <d3:LineGraph x:Name="sinc" Stroke="Blue"/>
+            <d3:LineGraph x:Name="xcube" Stroke="Red">
+                <d3:LineGraph.YDataTransform>
+                    <d3:LinearDataTransform Scale="0.001"/>
+                </d3:LineGraph.YDataTransform>
+            </d3:LineGraph>
+            <d3:PlotAxis x:Name="rightAxis" d3:Figure.Placement="Right" AxisOrientation="Right" Foreground="Red" YDataTransform="{Binding YDataTransform,ElementName=xcube}"/>
+            <d3:MouseNavigation/>
+        </d3:Figure>
+    </Grid>
+</UserControl>
+

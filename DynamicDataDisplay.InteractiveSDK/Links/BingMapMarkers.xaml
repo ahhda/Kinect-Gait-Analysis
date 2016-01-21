@@ -1,0 +1,51 @@
+<!-- Copyright © 2010-2011 Microsoft Corporation, All Rights Reserved.
+ -->
+<UserControl x:Class="BingMapMarkers.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:m="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"
+    xmlns:d3="clr-namespace:Microsoft.Research.DynamicDataDisplay;assembly=DynamicDataDisplay.Silverlight"         
+    xmlns:d3m="clr-namespace:Microsoft.Research.DynamicDataDisplay;assembly=DynamicDataDisplay.BingMaps.Silverlight"         
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Add dictionary with account key for BingMaps -->
+                <!-- You need to create your own account key at www.bingmapsportal.com -->
+                <ResourceDictionary Source="BingMapKey.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <m:Map CredentialsProvider="{StaticResource credentials}" Mode="Aerial">
+        <d3m:BingMapsPlot x:Name="plot">
+            <d3:MarkerGraph ClipToBounds="False" Name="markers" 
+                            YDataTransform="{Binding YDataTransform, ElementName=plot}"
+                            MarkerTemplate="{StaticResource Circle}" 
+                            LegendTemplate="{StaticResource CircleLegend}"
+                            MaxSnapshotSize="512,512">
+                <d3:DataSeries Key="X"/>
+                <d3:DataSeries Key="Y" Description="Interesting places"/>
+                <d3:ColorSeries/>
+                <d3:DataSeries Key="D"/>
+                <d3:DataSeries Key="S"/>
+                <d3:MarkerGraph.TooltipTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding Path=[S]}"/>
+                            <TextBlock Text="{Binding Path=Sources.[X], StringFormat='Lon = \{0\}'}"/>
+                            <TextBlock Text="{Binding Path=Sources.[Y], StringFormat='Lat = \{0\}'}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </d3:MarkerGraph.TooltipTemplate>
+            </d3:MarkerGraph>
+        </d3m:BingMapsPlot>
+        </m:Map>            
+    </Grid>
+</UserControl>
+

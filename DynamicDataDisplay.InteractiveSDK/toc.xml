@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<toc>
+  <header title="Tutorials">
+    <sample title="Drawing a line graph" codeName="Tutorial1" />
+    <sample title="Drawing multiple graphs" codeName="Tutorial2" />
+    <sample title="Drawing dynamic heatmap" codeName="Tutorial3" />
+    <sample title="Drawing bounding lines" codeName="Tutorial4" />
+  </header>
+  <header title="Bing Maps">
+    <sample title="Crop density" codeName="BingMapAreaMarkers"/>
+    <sample title="Famous locations" codeName="BingMapMarkers"/>
+  </header>
+  <header title="Heatmaps">
+    <sample title="Simple heatmap" codeName="HeatmapSample" />
+    <sample title="Background computations" codeName="DynamicHeatmapSample" />
+    <sample title="Heatmap with palette" codeName="HeatmapPaletteSample" />
+    <sample title="Matrix display" codeName="MatrixDisplaySample" />
+    <sample title="Standalone heatmap" codeName="StandaloneHeatmapSample" />
+  </header>
+  <header title="Markers">
+    <sample title="Simple marker graph" codeName="MarkerGraphSample" />
+    <sample title="Bubble chart" codeName="BubbleChartSample" />
+    <sample title="Custom bubble chart" codeName="CustomBubbleChartSample" />
+    <sample title="Custom marker legend" codeName="CustomMarkerLegendSample" />
+    <sample title="Vertical intervals" codeName="VerticalIntervalSample" />
+    <sample title="Marker templates" codeName="MarkerTemplatesSample" />
+    <sample title="Bar chart graph" codeName="BarChartSample" />
+    <sample title="Many markers" codeName="ManyMarkersSample" />
+  </header>
+  <header title="Dynamic Markers">
+    <sample title="Background computations" codeName="DynamicMarkerGraphSample" />
+    <sample title="Markers with UI control" codeName="MarkersWithUIControlSample" />
+    <sample title="Concurrent marker graph" codeName="ConcurrentMarkerGraphSample" />
+  </header>
+  <header title="Miscellaneous">
+    <sample title="Line graph legend" codeName="LineGraphLegendSample" />
+    <sample title="Plotting Silverlight elements" codeName="PlotSample" />
+  </header>
+  <header title="Plots Composition">
+    <sample title="Axis with ScrollBar" codeName="AxisScrollSample" />
+    <sample title="Syncronized figures" codeName="SyncGraphsSample" />
+    <sample title="Two scales in figure" codeName="TwoScalesSample" />
+  </header>
+
+</toc>
+
