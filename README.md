@@ -1,4 +1,7 @@
 # Kinect-Gait-Analysis
+
+![](https://cloud.githubusercontent.com/assets/7795956/12538486/952565e4-c300-11e5-9944-130ba0455f92.png)
+
 Track and identify skeleton based on their walking style
 Human recognition in surveillance system has become one of
 the challenging tasks for security aspects. Currently applied 
